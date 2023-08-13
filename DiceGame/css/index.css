@@ -1,0 +1,60 @@
+body 
+{
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  
+}
+.container 
+{
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #f8d280;
+    padding: 10px;
+    background-size: cover;
+}
+.player 
+{
+    display: inline-block;
+}
+.player1
+{
+    margin-right: 50px;
+}
+.dice 
+{
+    display: inline-block;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    background-color: #ff0092;
+    font-size: 20px;
+    font-weight: bold;
+}
+.shadow
+{
+    -webkit-box-shadow: 10px 11px 26px -4px rgba(0,0,0,0.46);
+    -moz-box-shadow: 10px 11px 26px -4px rgba(0,0,0,0.46);
+    box-shadow: 10px 11px 26px -4px rgba(0,0,0,0.46);
+}
+.roll-btn,
+.reset-btn
+{
+    display: block;
+    margin:20px auto 0 auto;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    color: #fff;
+    width: 150px;
+}
+.roll-btn 
+{
+    background-color: #e44b8d;
+
+}
+.reset-btn 
+{
+    background-color: #22010f; 
+    display: none;
+}

@@ -1,0 +1,66 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    background-color: lightblue;
+
+}
+.book >div{
+    border: .1rem solid #000;
+
+}
+.book 
+{
+    display: grid;
+    grid-template-columns: 1rem 9rem;
+    grid-template-areas: 
+    "spine book-cover"
+    "footer footer"
+    ;
+    cursor: pointer;
+}
+.book-spine 
+{
+    grid-area: spine;
+    background-color: brown;
+    border-top-left-radius: .5rem;
+    
+}
+.book-cover 
+{
+    grid-area: book-cover;  
+    background-color: lightgoldenrodyellow;
+    height: 8rem;
+    padding-top: .5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.book-footer 
+{
+    grid-area: footer;  
+    background-color: lightslategrey;
+    padding: .3em;
+    border-bottom-left-radius: .5rem;
+
+}
+.book:nth-of-type(even) .book-cover 
+{
+ background-color: lightgreen;
+}
+.book:nth-of-type(even) .book-spine 
+{
+ background-color: lightsalmon;
+}
+.library 
+{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,minmax(10rem, 1fr));
+    height: 100vh;
+    padding: 2em;
+    align-items: center;
+}

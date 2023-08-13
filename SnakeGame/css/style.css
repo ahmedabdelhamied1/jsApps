@@ -1,0 +1,191 @@
+body 
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    background: #B0E0E6;
+}
+h1,h3,h4,h5,h6 
+{
+    margin-top: 0;
+
+}
+h1 
+{
+    font-weight: 800;
+}
+h2
+{
+    margin-top: 25px;
+
+}
+.board 
+{
+    padding: 20px 50px;
+    max-width: 1000px;
+    height: 600px;
+    border: 2px solid green;
+    margin:0 auto;
+    background-image: url("../imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+.grid 
+{
+    width: 400px;
+    height: 400px;
+    border: 15px solid;
+    border-image: url("../imgs/wall.webp") 30 / 15px / 0px stretch;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    bottom: 10px;
+}
+.square 
+{
+    width: 40px;
+    height: 40px;
+}
+.snake 
+{
+    background: #ff3b00;
+}
+
+.apple 
+{
+   position: relative;
+   animation: bounce .9s  ease infinite;
+
+   
+}
+.apple::before 
+{
+    position: absolute;
+    content: "🍎";
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    left: 0;
+    top: 0;
+}
+
+@keyframes bounce {
+    0%{transform: scale(.3);}
+    100% {transform: scale(1);}
+}
+
+
+
+#startBtn {
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #ff3b00;
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+#startBtn:hover,
+#startBtn:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+#startBtn:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+#startBtn {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+#yummyApple,
+#gameOver
+{
+    display: none;
+}
+/* game over modal */
+#gameOverModal {
+    width: 750px;
+		height: 580px;
+		margin: auto;
+		margin-top: 20px;
+    border-radius: 40px;
+    background-color: #FB3733;
+    display: none;
+
+  }
+
+
+.gameover  {
+     
+        width:750px;
+			height: auto;
+			padding-top: 60px;
+			background: none;
+    }
+
+.gameover p {
+      margin-top: 0px;
+			margin-bottom: 0px;
+			font-size: 160px;
+			font-family: 'Black Ops One', cursive;
+			line-height: 120px;
+			text-align: center;
+			text-shadow: 5px 5px #000000;
+			color: #ffffff;
+    }
+
+.continue	 {
+      width: 750px;
+			height: auto;
+			padding-top: 40px;
+    }
+
+.continue p {
+      margin-block: 0;
+			text-align: center;
+			font-size: 40px;
+			font-weight: bold;
+			font-family: corbel;
+			color: #ffffff;
+			text-shadow: 2.5px 2.5px #000000;
+    }
+
+.btns {
+    width: 550px;
+		height: auto;
+		padding-top: 50px;
+		margin: auto;
+  }
+.yes a  {   
+    text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		font-family: corbel;
+		color: #ffffff;
+		text-decoration: none;
+		text-shadow: 2.5px 2.5px #000000;
+		padding: 25px 110px 25px 110px;
+    border: 1px solid #000000;
+		border-radius: 20px;
+		background: #006400;
+  }
+
+
+

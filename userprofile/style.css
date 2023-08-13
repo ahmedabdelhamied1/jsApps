@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+.userprofile 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #7fc8f8;
+}
+.userprofile-header 
+{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 
+}
+.userprofile-copmany
+{
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    border: .1rem solid #000;
+}
+.userprofile-copmany >div 
+{
+    margin: .3rem;
+    font-size: 1.2rem;
+}
+.userprofile-contact 
+{
+    background-color: lightgreen;
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+    border: .1rem solid #000;
+}
+.userprofile-adress 
+{
+    display: flex;
+    background-color: aquamarine;
+    padding: .3rem;
+    font-size: 1.1rem;
+    justify-content: space-between;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeGame</title>
+    <link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <div class="board">
+    <h1>Snake Game🐍</h1>
+    <button id="startBtn">Start/Restart</button>
+    <h2>Score <span id="score"> 0 </span> 🍎 </h2>
+    <div class="grid"></div>
+    <div id="gameOverModal">
+
+        <div class="gameover">
+        <p> GAME </p>
+        <p> OVER </p>
+    </div>
+    
+        <div class="continue"> <p> CONTINUE? </p> </div>
+    
+        <div class="btns">
+            <div class="yes"> <a id="replay"> YES </a> </div>
+        </div>
+    
+    </div>
+   
+   </div>
+   <audio id="eatEffect" src="./effects/apple.mp3"></audio>
+   <audio id="gameOver" src="./effects/gameover.wav"></audio>
+    <script src="./js/index.js"></script>
+</body>
+</html>

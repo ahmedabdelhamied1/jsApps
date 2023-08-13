@@ -1,0 +1,63 @@
+body
+{
+    margin: 0;
+    
+}
+h1,h2,p 
+{
+    margin-top:0
+}
+
+header
+{
+    padding: 20px 50px;
+    background-color: yellow;
+}
+section 
+{
+    padding: 20px 50px;
+}
+.section-one
+{
+    background-color: black;
+    color: #fff;
+}
+.accent-color
+{
+    color: yellow;
+    font-weight: bold;
+}
+.btn 
+{
+    padding: 10px 25px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.btn-yellow 
+{
+    background-color: yellow;
+    color: black;
+}
+.btn-yellow:hover,
+.btn-yellow:focus  
+{
+background-color: #fff;
+}
+.section-two
+{
+    background-color: #fff;
+    color: #000;
+}
+.btn-black
+{
+    background-color: #000;
+    color: #fff;
+}
+.btn-black:hover,
+.btn-black:focus 
+{
+    color: #000;
+    background-color: yellow;
+}

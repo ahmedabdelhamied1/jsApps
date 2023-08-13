@@ -1,0 +1,27 @@
+body{
+    background-color: #2a1a1f;
+    margin: 0;
+}
+.imagewrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.img 
+{
+    border: solid .1rem #fff;
+    border-radius: .7rem;
+    margin: .5rem;
+}
+.my-gallarey
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    
+}
+#selected-img
+{
+    align-self: flex-start;
+}

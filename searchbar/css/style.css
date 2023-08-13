@@ -1,0 +1,40 @@
+body 
+{
+    margin: 20px auto;
+    text-align: center;
+}
+.search 
+{
+    background-color: orange;
+    padding: 20px 50px;
+}
+.search label 
+{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.container 
+{
+    max-width: 800px;
+    margin: 0 auto;
+}
+#result {
+    list-style: none;
+    padding-left: 0;
+    padding: 10px;
+    background-color: royalblue;
+    margin-block: 0;
+
+}
+.name
+{
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px 25px;
+}
+#userNameInput 
+{
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+}
